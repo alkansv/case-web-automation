@@ -26,7 +26,6 @@ public class SeleniumHandler {
 
     private static Actions actions;
 
-    //static JavascriptExecutor jse;
 
     public void runWebDriver() {
         selectBrowserType();
@@ -109,7 +108,6 @@ public class SeleniumHandler {
             }
         }
 
-        //jse = (JavascriptExecutor) webDriver;
         actions = new Actions(webDriver);
         webDriverWait = new WebDriverWait(webDriver, Duration.ofMillis(implicitTimeout));
     }
