@@ -1,0 +1,37 @@
+{
+  "environments": {
+    "production": {
+      "urlMain": "https://useinsider.com/",
+      "urlQA": "https://useinsider.com/careers/quality-assurance/"
+    }
+  },
+  "browsers": [
+    {
+      "chrome": [
+        "--ignore-certifcate-errors",
+        "--disable-popup-blocking",
+        "--disable-gpu",
+        "--start-maximized",
+        "--disable-plugins",
+        "--disable-plugins-discovery",
+        "--disable-preconnect",
+        "--dns-prefetch-disable",
+        "--no-sandbox",
+        "test-type",
+        "-incognito"
+      ]
+    },
+    {
+      "firefox": {
+        "dom.webnotifications.enabled": false,
+        "dom.disable_beforeunload": true,
+        "headless": false,
+        "maximize": true
+      }
+    }
+  ],
+  "timeouts": {
+    "implicitTimeout": 10,
+    "sleepTimeout": 2
+  }
+}
